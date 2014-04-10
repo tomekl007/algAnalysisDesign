@@ -11,6 +11,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/AlghoritmsDesignManual$ch1_introduction_in_AlghoritmsDesignManual.coverage" NAME="ch1_introduction in AlghoritmsDesignManual Coverage Results" MODIFIED="1397130282840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ch1_introduction.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/AlghoritmsDesignManual$InterviewProblemsTest.coverage" NAME="InterviewProblemsTest Coverage Results" MODIFIED="1397129905503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ch3_dataStructures.*</FILTER>
+    </SUITE>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -251,6 +259,66 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/ch3_dataStructures/InterviewProblems.java" line="25" class="ch3_dataStructures.InterviewProblems" package="ch3_dataStructures">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/ch3_dataStructures/InterviewProblems.java" line="19" class="ch3_dataStructures.InterviewProblems" package="ch3_dataStructures">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/ch3_dataStructures/InterviewProblems.java" line="30" class="ch3_dataStructures.InterviewProblems" package="ch3_dataStructures">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/ch3_dataStructures/InterviewProblems.java" line="17" class="ch3_dataStructures.InterviewProblems" package="ch3_dataStructures">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -261,28 +329,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SortAlgorithm.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ch1_introduction/SortAlgorithm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="22" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SortAlghoritmTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ch1_introduction/SortAlghoritmTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="42" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="32" max-vertical-offset="465">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SelectionSort.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ch1_introduction/SelectionSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="50" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="722">
+            <state line="23" column="50" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="570">
               <folding />
             </state>
           </provider>
@@ -291,16 +341,43 @@
       <file leaf-file-name="DivideAndConquerExample.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ch2_alghoritmAnalysis/DivideAndConquerExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="23" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="644">
+            <state line="18" column="23" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="420">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InterviewProblems.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch1_introduction/InterviewProblems.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="465">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="InterviewProblems.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ch1_introduction/InterviewProblems.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch3_dataStructures/InterviewProblems.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="5" selection-start="533" selection-end="533" vertical-scroll-proportion="0.67667437" vertical-offset="167" max-vertical-offset="620">
+            <state line="31" column="24" selection-start="888" selection-end="888" vertical-scroll-proportion="0.54041916" vertical-offset="104" max-vertical-offset="795">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stack.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/util/Stack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="79" column="26" selection-start="2013" selection-end="2013" vertical-scroll-proportion="0.0" vertical-offset="1185" max-vertical-offset="2205">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InterviewProblemsTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ch3_dataStructures/InterviewProblemsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="46" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -309,10 +386,8 @@
       <file leaf-file-name="InterviewProblemTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ch1_introduction/InterviewProblemTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="24" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="666">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="21" column="24" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="555">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -320,10 +395,8 @@
       <file leaf-file-name="DivideAndConquerExampleTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ch2_alghoritmAnalysis/DivideAndConquerExampleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="19" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="12" column="19" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="330">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -331,11 +404,8 @@
       <file leaf-file-name="Math.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/lang/Math.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="643" column="28" selection-start="26214" selection-end="26214" vertical-scroll-proportion="0.0" vertical-offset="9104" max-vertical-offset="35250">
-              <folding>
-                <element signature="e#0#92217#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state line="643" column="28" selection-start="26214" selection-end="26214" vertical-scroll-proportion="0.0" vertical-offset="9645" max-vertical-offset="35640">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -343,19 +413,7 @@
       <file leaf-file-name="StrictMath.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/lang/StrictMath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="631" column="32" selection-start="25386" selection-end="25386" vertical-scroll-proportion="0.0" vertical-offset="8969" max-vertical-offset="25380">
-              <folding>
-                <element signature="e#0#64468#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlghoritmsDesignManual.iml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AlghoritmsDesignManual.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+            <state line="631" column="32" selection-start="25386" selection-end="25386" vertical-scroll-proportion="0.0" vertical-offset="9465" max-vertical-offset="25740">
               <folding />
             </state>
           </provider>
@@ -388,6 +446,9 @@
         <option value="$PROJECT_DIR$/src/test/java/ch2_alghoritmAnalysis/DivideAndConquerExampleTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ch1_introduction/InterviewProblems.java" />
         <option value="$PROJECT_DIR$/src/test/java/ch1_introduction/InterviewProblemTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch3_dataStructures/InverviewProblems.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch3_dataStructures/InterviewProblems.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ch3_dataStructures/InterviewProblemsTest.java" />
       </list>
     </option>
   </component>
@@ -431,8 +492,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -448,6 +507,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AlghoritmsDesignManual" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AlghoritmsDesignManual" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AlghoritmsDesignManual" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch3_dataStructures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -518,6 +603,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AlghoritmsDesignManual" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AlghoritmsDesignManual" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch3_dataStructures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -575,6 +686,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -593,26 +706,27 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="ch1_introduction" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in AlghoritmsDesignManual">
-    <configuration default="false" name="SortAlghoritmTest.shouldSortArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ch1_introduction in AlghoritmsDesignManual">
+    <configuration default="false" name="InterviewProblemsTest.shouldClassifyStringAsNotCorrectOneOpenMore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ch1_introduction.*" />
+          <option name="PATTERN" value="ch3_dataStructures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="AlghoritmsDesignManual" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ch1_introduction" />
-      <option name="MAIN_CLASS_NAME" value="ch1_introduction.SortAlghoritmTest" />
-      <option name="METHOD_NAME" value="shouldSortArray" />
+      <option name="PACKAGE_NAME" value="ch3_dataStructures" />
+      <option name="MAIN_CLASS_NAME" value="ch3_dataStructures.InterviewProblemsTest" />
+      <option name="METHOD_NAME" value="shouldClassifyStringAsNotCorrectOneOpenMore" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -634,19 +748,49 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="DivideAndConquerExampleTest.shouldReturnPower" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="InterviewProblemsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ch2_alghoritmAnalysis.*" />
+          <option name="PATTERN" value="ch3_dataStructures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="AlghoritmsDesignManual" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ch2_alghoritmAnalysis" />
-      <option name="MAIN_CLASS_NAME" value="ch2_alghoritmAnalysis.DivideAndConquerExampleTest" />
-      <option name="METHOD_NAME" value="shouldReturnPower" />
+      <option name="PACKAGE_NAME" value="ch3_dataStructures" />
+      <option name="MAIN_CLASS_NAME" value="ch3_dataStructures.InterviewProblemsTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Cover" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="InterviewProblemsTest.shouldClassifyStringAsNotCorrectTooMuchClosing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ch3_dataStructures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AlghoritmsDesignManual" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ch3_dataStructures" />
+      <option name="MAIN_CLASS_NAME" value="ch3_dataStructures.InterviewProblemsTest" />
+      <option name="METHOD_NAME" value="shouldClassifyStringAsNotCorrectTooMuchClosing" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -658,17 +802,39 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="InterviewProblemTest.shouldDivideTwoInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="InterviewProblemsTest.shouldClassifyStringAsNotCorrectOneCloseMore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ch3_dataStructures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AlghoritmsDesignManual" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ch3_dataStructures" />
+      <option name="MAIN_CLASS_NAME" value="ch3_dataStructures.InterviewProblemsTest" />
+      <option name="METHOD_NAME" value="shouldClassifyStringAsNotCorrectOneCloseMore" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ch1_introduction in AlghoritmsDesignManual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ch1_introduction.*" />
@@ -679,57 +845,6 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ch1_introduction" />
-      <option name="MAIN_CLASS_NAME" value="ch1_introduction.InterviewProblemTest" />
-      <option name="METHOD_NAME" value="shouldDivideTwoInt" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="InterviewProblemTest.shouldDivideTwoBigInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ch1_introduction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="AlghoritmsDesignManual" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ch1_introduction" />
-      <option name="MAIN_CLASS_NAME" value="ch1_introduction.InterviewProblemTest" />
-      <option name="METHOD_NAME" value="shouldDivideTwoBigInt" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="All in AlghoritmsDesignManual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="AlghoritmsDesignManual" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
@@ -743,8 +858,8 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <RunnerSettings RunnerId="Cover" />
+      <ConfigurationWrapper RunnerId="Cover" />
       <method />
     </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
@@ -1106,19 +1221,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.SortAlghoritmTest.shouldSortArray" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.DivideAndConquerExampleTest.shouldReturnPower" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.InterviewProblemTest.shouldDivideTwoInt" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.InterviewProblemTest.shouldDivideTwoBigInt" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.All in AlghoritmsDesignManual" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.InterviewProblemsTest.shouldClassifyStringAsNotCorrectOneOpenMore" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.InterviewProblemsTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.InterviewProblemsTest.shouldClassifyStringAsNotCorrectTooMuchClosing" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.InterviewProblemsTest.shouldClassifyStringAsNotCorrectOneCloseMore" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ch1_introduction in AlghoritmsDesignManual" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in AlghoritmsDesignManual" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.InterviewProblemTest.shouldDivideTwoBigInt" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.InterviewProblemTest.shouldDivideTwoInt" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DivideAndConquerExampleTest.shouldReturnPower" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.SortAlghoritmTest.shouldSortArray" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ch1_introduction in AlghoritmsDesignManual" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.InterviewProblemsTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.InterviewProblemsTest.shouldClassifyStringAsNotCorrectTooMuchClosing" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.InterviewProblemsTest.shouldClassifyStringAsNotCorrectOneOpenMore" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.InterviewProblemsTest.shouldClassifyStringAsNotCorrectOneCloseMore" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1145,16 +1260,17 @@
       <created>1396870802615</created>
       <updated>1396870802615</updated>
       <workItem from="1396870804049" duration="2348000" />
-      <workItem from="1397035757581" duration="6405000" />
+      <workItem from="1397035757581" duration="11235000" />
+      <workItem from="1397144269253" duration="592000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8753000" />
+    <option name="totallyTimeSpent" value="14175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="811" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1170,22 +1286,23 @@
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25143266" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32684284" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32684284" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3588317" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1233,9 +1350,7 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3276" column="24" selection-start="149737" selection-end="149737" vertical-scroll-proportion="0.0" vertical-offset="49140" max-vertical-offset="76380">
-          <folding />
-        </state>
+        <state line="3276" column="24" selection-start="149737" selection-end="149737" vertical-scroll-proportion="0.0" vertical-offset="49140" max-vertical-offset="76380" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -1247,9 +1362,7 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3276" column="24" selection-start="149737" selection-end="149737" vertical-scroll-proportion="0.0" vertical-offset="48373" max-vertical-offset="75825">
-          <folding />
-        </state>
+        <state line="3276" column="24" selection-start="149737" selection-end="149737" vertical-scroll-proportion="0.0" vertical-offset="48373" max-vertical-offset="75825" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch1_introduction/IncremetnalCorectess.java">
@@ -1261,9 +1374,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AlghoritmsDesignManual.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch1_introduction/SortAlgorithm.java">
@@ -1280,42 +1391,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch1_introduction/SelectionSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="50" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="722">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/lang/StrictMath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="631" column="32" selection-start="25386" selection-end="25386" vertical-scroll-proportion="0.0" vertical-offset="8969" max-vertical-offset="25380">
-          <folding>
-            <element signature="e#0#64468#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="643" column="28" selection-start="26214" selection-end="26214" vertical-scroll-proportion="0.0" vertical-offset="9104" max-vertical-offset="35250">
-          <folding>
-            <element signature="e#0#92217#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ch2_alghoritmAnalysis/DivideAndConquerExampleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ch1_introduction/SortAlghoritmTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="42" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="179" max-vertical-offset="589">
@@ -1323,12 +1398,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ch1_introduction/InterviewProblemTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch1_introduction/SelectionSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="24" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="666">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="23" column="50" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="722">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1341,7 +1414,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ch1_introduction/InterviewProblems.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="533" selection-end="533" vertical-scroll-proportion="0.67667437" vertical-offset="167" max-vertical-offset="620">
+        <state line="6" column="13" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch3_dataStructures/InterviewProblems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="24" selection-start="888" selection-end="888" vertical-scroll-proportion="0.54041916" vertical-offset="104" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/util/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="26" selection-start="2013" selection-end="2013" vertical-scroll-proportion="0.0" vertical-offset="696" max-vertical-offset="1860">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ch3_dataStructures/InterviewProblemsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="46" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ch1_introduction/InterviewProblemTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="24" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ch2_alghoritmAnalysis/DivideAndConquerExampleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="19" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="643" column="28" selection-start="26214" selection-end="26214" vertical-scroll-proportion="0.0" vertical-offset="9104" max-vertical-offset="35250">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/src.zip!/java/lang/StrictMath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="631" column="32" selection-start="25386" selection-end="25386" vertical-scroll-proportion="0.0" vertical-offset="8969" max-vertical-offset="25380">
           <folding />
         </state>
       </provider>
