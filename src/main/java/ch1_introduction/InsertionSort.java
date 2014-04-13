@@ -9,7 +9,7 @@ public class InsertionSort extends SortAlgorithm {
 
 
     @Override
-    public void sort(int s[], int n) {
+    public void sort(Integer[] s, int n) {
         int i, j;                /* counters */
         for (i = 1; i < n; i++) { // n
             j = i;

@@ -7,7 +7,7 @@ package ch1_introduction;
 public class SelectionSort extends SortAlgorithm {
 
     @Override
-    public void sort(int s[], int n) {
+    public void sort(Integer[] s, int n) {
         int i, j;
         int min;
         for (i = 0; i < n; i++) {   //n
@@ -24,9 +24,4 @@ public class SelectionSort extends SortAlgorithm {
         }     //n * (n - i - 1 ) => n * n = n^2 //
     }
 
-    private void swap(int[] s, int i, int min) {
-        int temp = s[min];
-        s[min] = s[i];
-        s[i] = temp;
-    }
 }

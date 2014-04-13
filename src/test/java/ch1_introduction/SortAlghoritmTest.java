@@ -1,6 +1,6 @@
 package ch1_introduction;
 
-import junit.framework.Assert;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -14,9 +14,9 @@ public class SortAlghoritmTest {
     @Test
     public void shouldSortArray(){
         //given
-        int [] a = new int[]{ 2,1,9,3,1};
-        int [] b = Arrays.copyOf(a, a.length );
-        SortAlgorithm sortAlgorithm = new SelectionSort();
+        Integer[] a = new Integer[]{ 2,1,9,3,1};
+        Integer [] b = Arrays.copyOf(a, a.length );
+        SortAlgorithm sortAlgorithm = new InsertionSort();
         //when
         sortAlgorithm.sort(a, a.length);
         Arrays.sort(b);
