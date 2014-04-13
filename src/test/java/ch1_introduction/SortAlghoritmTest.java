@@ -1,5 +1,6 @@
 package ch1_introduction;
 
+import ch4_sortingAndSearching.MergeSort;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -16,7 +17,7 @@ public class SortAlghoritmTest {
         //given
         Integer[] a = new Integer[]{ 2,1,9,3,1};
         Integer [] b = Arrays.copyOf(a, a.length );
-        SortAlgorithm sortAlgorithm = new InsertionSort();
+        SortAlgorithm sortAlgorithm = new MergeSort();
         //when
         sortAlgorithm.sort(a, a.length);
         Arrays.sort(b);

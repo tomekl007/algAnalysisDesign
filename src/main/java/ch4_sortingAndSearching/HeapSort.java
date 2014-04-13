@@ -25,7 +25,7 @@ public class HeapSort extends SortAlgorithm {
         for (int i = 0; i < s.length; i++) {
             s[i] = heap.removeFirst(); //log n
         }
-    }
+    }       //n * log n
 }
 
 
