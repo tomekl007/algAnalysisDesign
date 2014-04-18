@@ -2,9 +2,13 @@ package ch5graphs;
 
 import ch5graphs.helper.GraphTestHelper;
 import ch5graphs.operations.FindCycleOperations;
+import ch5graphs.operations.GraphProcessOperations;
 import ch5graphs.operations.GraphSimpleProcessOperations;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.Collection;
+import java.util.LinkedList;
 
 /**
  * @author Tomasz Lelek
@@ -63,8 +67,13 @@ public class GraphOperationsTest {
         //given
         Graph graph = GraphTestHelper.createUndirectedGraph();
         //when
-        GraphOperations graphOperations = new GraphOperations(new GraphSimpleProcessOperations());
-        graphOperations.depthFirstSearch(graph, 0);
+        GraphSimpleProcessOperations graphSimpleProcessOperations = new GraphSimpleProcessOperations();
+        GraphOperations graphOperations = new GraphOperations(graphSimpleProcessOperations);
+
+        graphOperations.depthFirstSearch(graph, 0,
+                graphSimpleProcessOperations::processVertexEarly
+                ,graphSimpleProcessOperations::processVertexLate
+                ,graphSimpleProcessOperations::processEdge);
         //then
         Assert.assertTrue(graphOperations.time > 9);
 
@@ -76,10 +85,34 @@ public class GraphOperationsTest {
         //given
         Graph graph = GraphTestHelper.createGraphWithCycle();
         //when
-        GraphOperations graphOperations = new GraphOperations(new FindCycleOperations());
-        graphOperations.depthFirstSearch(graph, 0);
+        GraphProcessOperations graphProcessOperations = new FindCycleOperations();
+        GraphOperations graphOperations = new GraphOperations(graphProcessOperations);
+        graphOperations.depthFirstSearch(graph, 0,
+                graphProcessOperations::processVertexEarly
+                ,graphProcessOperations::processVertexLate
+                ,graphProcessOperations::processEdge);
         //then
         Assert.assertTrue(graphOperations.finished);
+    }
+
+    @Test
+    public void shouldSortDirectGraph(){
+        //given
+        Graph graph = GraphTestHelper.createDirectGraph();
+        GraphOperations graphOperations = new GraphOperations(new GraphSimpleProcessOperations());
+        //when
+        Collection<Integer> result = graphOperations.topsort(graph);
+        //then
+        Collection<Integer> expected = new LinkedList<>();
+        expected.add(7);
+        expected.add(1);
+        expected.add(2);
+        expected.add(3);
+        expected.add(6);
+        expected.add(5);
+        expected.add(4);
+
+        Assert.assertEquals(expected, result);
     }
 
 

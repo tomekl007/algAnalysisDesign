@@ -44,4 +44,20 @@ public class GraphTestHelper {
         graph.insertEdge(2,4, false);
         return graph;
     }
+
+    public static Graph createDirectGraph() {
+        Graph graph = new Graph(true);
+        graph.insertEdge(1,2, true);
+        graph.insertEdge(1,3, true);
+        graph.insertEdge(2,4, true);
+        graph.insertEdge(2,3, true);
+        graph.insertEdge(3,5, true);
+        graph.insertEdge(5,4, true);
+        graph.insertEdge(6,5, true);
+        graph.insertEdge(3,6, true);
+        graph.insertEdge(7,6, true);
+        graph.insertEdge(7,1, true);
+        return graph;
+
+    }
 }

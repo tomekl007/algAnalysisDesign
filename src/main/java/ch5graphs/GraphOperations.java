@@ -1,35 +1,45 @@
 package ch5graphs;
 
 import ch5graphs.operations.GraphProcessOperations;
+import ch5graphs.operations.TriFunction;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
+import java.util.function.Consumer;
 
 /**
  * @author Tomasz Lelek
  * @since 2014-04-16
  */
 public class GraphOperations {
-    enum COLOR {UNCOLORED, WHITE, BLACK};
+    enum COLOR {UNCOLORED, WHITE, BLACK}
+
+    ;
+
+    enum EDGE_TYPE {TREE, BACK, FORWARD, CROSS, UNCLASSIFIED}
 
     boolean processed[] = new boolean[Graph.MAX_VERTICES];
     boolean discovered[] = new boolean[Graph.MAX_VERTICES];
-    COLOR color[] =  new COLOR[Graph.MAX_VERTICES];
+    COLOR color[] = new COLOR[Graph.MAX_VERTICES];
     int parent[] = new int[Graph.MAX_VERTICES];
     int time = 0;
     int entryTime[] = new int[Graph.MAX_VERTICES];
     boolean bipartite;
     boolean finished = false;
 
+    //finding articulation
+    int reachargableAncestor[] = new int[Graph.MAX_VERTICES]; /* earliest reachable ancestor of v */
+    int treeOutDegree[] = new int[Graph.MAX_VERTICES];/* DFS tree outdegree of v */
+
     //each vertex is initialize as undiscovered
-    private void initializeSearch(Graph graph){
-       // Arrays.fill(color, COLOR.UNCOLORED);
+    private void initializeSearch(Graph graph) {
+        // Arrays.fill(color, COLOR.UNCOLORED);
 
         for (int i = 1; i < graph.nrOfVertices(); i++) {
             processed[i] = discovered[i] = false;
             parent[i] = -1;
         }
     }
+
     private final GraphProcessOperations graphProcessOperations;
 
     public GraphOperations(GraphProcessOperations graphProcessOperations) {
@@ -39,15 +49,16 @@ public class GraphOperations {
     /**
      * A connected component of an undirected graph is a
      * maximal set of vertices such that there is a path between every pair of vertices
+     *
      * @param graph
      */
-    public int connectedComponenets(Graph graph){
+    public int connectedComponenets(Graph graph) {
         int componentNumber = 0;
         initializeSearch(graph);
 
         for (int i = 0; i < graph.nrOfVertices(); i++) {
-            if(!discovered[i]){
-                componentNumber ++;
+            if (!discovered[i]) {
+                componentNumber++;
                 System.out.print("Component : " + componentNumber);
                 breadthFirstSearch(graph, i);
             }
@@ -56,7 +67,7 @@ public class GraphOperations {
     }
 
 
-    public void breadthFirstSearch(Graph graph, int start){
+    public void breadthFirstSearch(Graph graph, int start) {
         initializeSearch(graph);
         Queue<Integer> verticesToVisit = new LinkedList<>();
         int currentVertex;
@@ -66,18 +77,18 @@ public class GraphOperations {
         discovered[start] = true;
         EdgeNode edgeNode;
 
-        while(!verticesToVisit.isEmpty()){
+        while (!verticesToVisit.isEmpty()) {
             currentVertex = verticesToVisit.poll();
             graphProcessOperations.processVertexEarly(currentVertex);
             processed[currentVertex] = true;
             edgeNode = graph.edges[currentVertex];
 
-            while(edgeNode != null){
+            while (edgeNode != null) {
                 successorVertex = edgeNode.adjencyInfo;
-                if((!processed[successorVertex]) || graph.directed){
+                if ((!processed[successorVertex]) || graph.directed) {
                     processEdge(currentVertex, successorVertex);
                 }
-                if(!discovered[successorVertex]){
+                if (!discovered[successorVertex]) {
                     verticesToVisit.offer(successorVertex);
                     discovered[successorVertex] = true;
                     parent[successorVertex] = currentVertex;
@@ -90,55 +101,66 @@ public class GraphOperations {
     }
 
 
-    public void depthFirstSearch(Graph g, int vertex){
+    public void depthFirstSearch(Graph g, int vertex,
+                                 Consumer<Integer> processVertexEarly,
+                                 Consumer<Integer> processVertexLate,
+                                 TriFunction<Integer,Integer,int[], Boolean> processEdgeF) {
         int successorVertex;
 
-        if(finished) return;
+        if (finished) return;
 
         discovered[vertex] = true;
-        time ++;
+        time++;
         entryTime[vertex] = time;
 
-        graphProcessOperations.processVertexEarly(vertex);
+
+        processVertexEarly.accept(vertex);
+
         EdgeNode edgeNode = g.edges[vertex];
 
-        while(edgeNode != null){
+        while (edgeNode != null) {
             successorVertex = edgeNode.adjencyInfo;
-            if(!discovered[successorVertex]){
+
+
+            if (!discovered[successorVertex]) {
                 parent[successorVertex] = vertex;
-                finished = graphProcessOperations.processEdge(vertex, successorVertex, parent);
-                depthFirstSearch(g, successorVertex);
-            }else if( !processed[successorVertex] || g.directed){
-                finished = graphProcessOperations.processEdge(vertex, successorVertex, parent);
+                finished = processEdgeF.accept(vertex, successorVertex, parent);
+                depthFirstSearch(g, successorVertex, processVertexEarly, processVertexLate, processEdgeF);
+            } else if (!processed[successorVertex] || g.directed) {
+                finished = processEdgeF.accept(vertex, successorVertex, parent);
             }
 
-            if(finished) return;
+            printInfoAboutEdgeType(vertex, successorVertex);
+
+            if (finished) return;
 
             edgeNode = edgeNode.next;
 
         }
-        graphProcessOperations.processVertexLate(vertex);
-        time ++;
+        processVertexLate.accept(vertex);
+        time++;
         entryTime[vertex] = time;
 
         processed[vertex] = true;
 
     }
 
+    private void printInfoAboutEdgeType(int vertex, int successorVertex) {
+        System.out.println(vertex + " -> " + successorVertex
+                + " " + edgeClassification(vertex, successorVertex));
+    }
 
 
+    public void twoColor(Graph graph) {
 
-    public void twoColor(Graph graph)
-    {
-
-        for (int i=1; i<=graph.nrOfVertices(); i++){
+        for (int i = 1; i <= graph.nrOfVertices(); i++) {
             color[i] = COLOR.UNCOLORED;
         }
 
         bipartite = true;
         initializeSearch(graph);
 
-        for (int i=1; i<= graph.nrOfVertices(); i++)
+        for (int i = 1; i <= graph.nrOfVertices(); i++)
             if (!discovered[i]) {
                 color[i] = COLOR.WHITE;
                 breadthFirstSearch(graph, i);
@@ -146,8 +168,7 @@ public class GraphOperations {
 
     }
 
-    public void processEdge(int x, int y)
-    {
+    public void processEdge(int x, int y) {
         if (color[x] == color[y]) {
             bipartite = false;
             System.out.printf("Warning: not bipartite due to (%d,%d)\n", x, y);
@@ -156,8 +177,84 @@ public class GraphOperations {
     }
 
     private COLOR complement(COLOR color) {
-        if (color == COLOR.WHITE) return(COLOR.BLACK);
-        if (color == COLOR.BLACK) return(COLOR.WHITE);
-        return(COLOR.UNCOLORED);
+        if (color == COLOR.WHITE) return (COLOR.BLACK);
+        if (color == COLOR.BLACK) return (COLOR.WHITE);
+        return (COLOR.UNCOLORED);
+    }
+
+    EDGE_TYPE edgeClassification(int x, int y) {
+        if (parent[y] == x) return (EDGE_TYPE.TREE);
+        if (discovered[y] && !processed[y]) return (EDGE_TYPE.BACK);
+        if (processed[y] && (entryTime[y] > entryTime[x])) return (EDGE_TYPE.FORWARD);
+        if (processed[y] && (entryTime[y] < entryTime[x])) return (EDGE_TYPE.CROSS);
+        System.out.printf("Warning: unclassified edge (%d,%d)\n", x, y);
+        return EDGE_TYPE.UNCLASSIFIED;
+    }
+
+
+    void processEdgeArticulation(int x, int y) {
+        EDGE_TYPE edge_type;              /* edge class */
+        edge_type = edgeClassification(x, y);
+        if (edge_type.equals(EDGE_TYPE.TREE))
+            treeOutDegree[x] = treeOutDegree[x] + 1;
+        if ((edge_type.equals(EDGE_TYPE.BACK)) && (parent[x] != y)) {
+            if (entryTime[y] < entryTime[reachargableAncestor[x]])
+                reachargableAncestor[x] = y;
+        }
+    }
+
+
+    public void processLateVertexArticulation(int v) {
+        boolean isRootOfTree;/* is the vertex the root of the DFS tree? */
+        int time_v;/* earliest reachable time for v */
+        int time_parent;/* earliest reachable time for parent[v] */
+
+        if (parent[v] < 1) {    /* test if v is the root */
+            if (treeOutDegree[v] > 1)
+                System.out.printf("root articulation vertex: %d \n", v);
+            return;
+        }
+        isRootOfTree = (parent[parent[v]] < 1);      /* is parent[v] the root? */
+        if ((reachargableAncestor[v] == parent[v]) && (!isRootOfTree))
+            System.out.printf("parent articulation vertex: %d \n", parent[v]);
+        if (reachargableAncestor[v] == v) {
+            System.out.printf("bridge articulation vertex: %d \n", parent[v]);
+            if (treeOutDegree[v] > 0)  /* test if v is not a leaf */
+                System.out.printf("bridge articulation vertex: %d \n", v);
+        }
+        time_v = entryTime[reachargableAncestor[v]];
+        time_parent = entryTime[reachargableAncestor[parent[v]]];
+        if (time_v < time_parent)
+            reachargableAncestor[parent[v]] = reachargableAncestor[v];
+    }
+
+    private Stack<Integer> sorted = new Stack<>();
+
+    public Collection<Integer> topsort(Graph g) {
+        int i;
+
+        for (i = 1; i <= g.nrOfVertices(); i++)
+            if (!discovered[i])
+                depthFirstSearch(g, i,
+                        graphProcessOperations::processVertexEarly,
+                        this::processVertexLateTopSort,
+                        this::processEdgeTopSort);
+
+        Collections.reverse(sorted);
+        return sorted;
+
+    }
+
+    void processVertexLateTopSort(int v) {
+        sorted.push(v);
+    }
+
+    boolean processEdgeTopSort(int x, int y, int[] ignored) {
+        EDGE_TYPE edge_type = edgeClassification(x, y);
+        if ( edge_type.equals(EDGE_TYPE.BACK)){
+            System.out.printf("Warning: directed cycle found, not a DAG\n");
+            return true;
+        }
+        return false;
     }
 }
