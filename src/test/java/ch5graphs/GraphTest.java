@@ -1,5 +1,6 @@
 package ch5graphs;
 
+import ch5graphs.helper.GraphTestHelper;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -15,8 +16,8 @@ public class GraphTest {
         //when
         Graph graph = GraphTestHelper.createUndirectedGraph();
         //then
-        Assert.assertEquals(4, graph.nrOfVertices());
-        Assert.assertEquals(4, graph.nrOfEdges);
+        Assert.assertTrue(4 < graph.nrOfVertices());
+        Assert.assertTrue(4 < graph.nrOfEdges);
         graph.printGraph();
 
     }
