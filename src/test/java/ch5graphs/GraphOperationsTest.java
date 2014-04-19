@@ -101,7 +101,7 @@ public class GraphOperationsTest {
         Graph graph = GraphTestHelper.createDirectGraph();
         GraphOperations graphOperations = new GraphOperations(new GraphSimpleProcessOperations());
         //when
-        Collection<Integer> result = graphOperations.topsort(graph);
+        Collection<Integer> result = graphOperations.topologicalSort(graph);
         //then
         Collection<Integer> expected = new LinkedList<>();
         expected.add(7);

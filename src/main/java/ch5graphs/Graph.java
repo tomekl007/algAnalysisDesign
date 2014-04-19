@@ -11,7 +11,7 @@ public class Graph {
     public final static int MAX_VERTICES  = 100;
 
     Set<Integer> vertices = new HashSet<>();
-    EdgeNode[] edges ;
+    public EdgeNode[] edges ;
     int[] degree;
 
     int nrOfEdges;
@@ -24,19 +24,19 @@ public class Graph {
         this.degree = new int[MAX_VERTICES];
     }
 
-    public void insertEdge(int firstVertex, int secondVertex, boolean directed){
+    public void insertEdge(int firstVertex, int secondVertex, boolean directed, int weight){
         vertices.add(firstVertex);
         vertices.add(secondVertex);
 
         EdgeNode edgeNode = new EdgeNode();
-        edgeNode.weight = 0;
+        edgeNode.weight = weight;
         edgeNode.adjencyInfo = secondVertex;
         edgeNode.next = this.edges[firstVertex];
         this.edges[firstVertex] = edgeNode;
         this.degree[firstVertex] ++;
 
         if(!directed){
-            insertEdge(secondVertex,firstVertex, true);
+            insertEdge(secondVertex,firstVertex, true, 0);
         }else{
             this.nrOfEdges ++;
         }

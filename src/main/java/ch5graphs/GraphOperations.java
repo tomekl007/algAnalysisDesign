@@ -230,7 +230,7 @@ public class GraphOperations {
 
     private Stack<Integer> sorted = new Stack<>();
 
-    public Collection<Integer> topsort(Graph g) {
+    public Collection<Integer> topologicalSort(Graph g) {
         int i;
 
         for (i = 1; i <= g.nrOfVertices(); i++)

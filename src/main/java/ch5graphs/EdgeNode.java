@@ -5,7 +5,17 @@ package ch5graphs;
  * @since 2014-04-16
  */
 public class EdgeNode {
-    int adjencyInfo;
-    int weight;
-    EdgeNode next;
+    public int adjencyInfo;
+    public int weight;
+
+    @Override
+    public String toString() {
+        return "EdgeNode{" +
+                "adjencyInfo=" + adjencyInfo +
+                ", weight=" + weight +
+                ", next=" + next +
+                '}';
+    }
+
+    public EdgeNode next;
 }
