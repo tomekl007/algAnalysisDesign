@@ -7,6 +7,7 @@ import ch5graphs.operations.GraphSimpleProcessOperations;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.LinkedList;
 
@@ -124,6 +125,16 @@ public class GraphOperationsTest {
         graphOperations.strongComponenets(graph);
         //then
         Assert.assertEquals(3, graphOperations.componentsFound);
+    }
+
+    @Test
+    public void shouldReturnEdgaPairArray(){
+        //given
+        Graph graph = GraphTestHelper.createUndirectedGraph();
+        //when
+        EdgePair edgePair[] = GraphOperations.toEdgePairArray(graph);
+        //then
+        System.out.println(Arrays.toString(edgePair));
     }
 
 

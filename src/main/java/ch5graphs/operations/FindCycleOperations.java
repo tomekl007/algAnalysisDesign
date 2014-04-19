@@ -15,7 +15,7 @@ public class FindCycleOperations implements GraphProcessOperations {
         System.out.println("process vertex late : " + currentVertex);
     }
 
-    private Map<Pair<Integer, Integer>, Boolean> twoVertex = new HashMap<>();
+    public Map<Pair<Integer, Integer>, Boolean> twoVertex = new HashMap<>();
 
     @Override
     public boolean processEdge(int x, int y, int[] parent) {

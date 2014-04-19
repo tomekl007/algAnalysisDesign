@@ -1,5 +1,6 @@
 package ch5graphs;
 
+import ch5graphs.operations.FindCycleOperations;
 import ch5graphs.operations.GraphProcessOperations;
 import ch5graphs.operations.TriFunction;
 
@@ -318,6 +319,21 @@ public class GraphOperations {
         while ((t = active.pop()) != v) {
             strongComponentNumber[t] = componentsFound;
         }
+    }
+
+    /**
+     * should return array with all edges from given graph
+     * @param g
+     * @return
+     */
+    public static EdgePair[] toEdgePairArray(Graph g) {
+        FindCycleOperations findCycleOperations = new FindCycleOperations();
+        GraphOperations graphOperations = new GraphOperations(findCycleOperations);
+        graphOperations.depthFirstSearch(g, 0, findCycleOperations::processVertexEarly,
+                findCycleOperations::processVertexEarly, findCycleOperations::processEdge);
+        //findCycleOperations.twoVertex
+        return new EdgePair[findCycleOperations.twoVertex.size()];
+
     }
 
 }

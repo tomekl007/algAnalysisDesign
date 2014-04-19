@@ -14,7 +14,7 @@ public class Graph {
     public EdgeNode[] edges ;
     int[] degree;
 
-    int nrOfEdges;
+    public int nrOfEdges;
     boolean directed;
 
     public Graph(boolean directed) {
@@ -62,6 +62,7 @@ public class Graph {
     public String toString() {
         return "Graph{}";
     }
+
 
 
 }
