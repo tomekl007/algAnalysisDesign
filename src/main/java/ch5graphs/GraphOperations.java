@@ -36,7 +36,7 @@ public class GraphOperations {
 
         for (int i = 1; i < graph.nrOfVertices(); i++) {
             processed[i] = discovered[i] = false;
-            parent[i] = -1;
+            parent[i] = 0;
         }
     }
 
@@ -104,7 +104,7 @@ public class GraphOperations {
     public void depthFirstSearch(Graph g, int vertex,
                                  Consumer<Integer> processVertexEarly,
                                  Consumer<Integer> processVertexLate,
-                                 TriFunction<Integer,Integer,int[], Boolean> processEdgeF) {
+                                 TriFunction<Integer, Integer, int[], Boolean> processEdgeF) {
         int successorVertex;
 
         if (finished) return;
@@ -251,10 +251,73 @@ public class GraphOperations {
 
     boolean processEdgeTopSort(int x, int y, int[] ignored) {
         EDGE_TYPE edge_type = edgeClassification(x, y);
-        if ( edge_type.equals(EDGE_TYPE.BACK)){
+        if (edge_type.equals(EDGE_TYPE.BACK)) {
             System.out.printf("Warning: directed cycle found, not a DAG\n");
             return true;
         }
         return false;
     }
+
+
+    //finding strong connected components
+    int oldestVertex[] = new int[Graph.MAX_VERTICES];
+    int strongComponentNumber[] = new int[Graph.MAX_VERTICES];
+    Stack<Integer> active = new Stack<>();
+    int componentsFound;
+
+    public void strongComponenets(Graph g) {
+
+        for (int i = 1; i <= g.nrOfVertices(); i++) {
+            oldestVertex[i] = i;
+            strongComponentNumber[i] = -1;
+        }
+        componentsFound = 0;
+
+        initializeSearch(g);
+
+        for (int i = 1; i <= g.nrOfVertices(); i++)
+            if (!discovered[i]) {
+                depthFirstSearch(g, i,
+                        this::processVertexEarlyStrongComponent,
+                        this::processVertexLateStrongComponent,
+                        this::procesEdgeStrongComponent);
+            }
+    }
+
+    boolean procesEdgeStrongComponent(int x, int y, int[] ignored) {
+
+        EDGE_TYPE edge_type = edgeClassification(x, y);
+        if (edge_type.equals(EDGE_TYPE.BACK)) {
+            if (entryTime[y] < entryTime[oldestVertex[x]])
+                oldestVertex[x] = y;
+        }
+        if (edge_type.equals(EDGE_TYPE.CROSS)) {
+            if (strongComponentNumber[y] == -1)  /* component not yet assigned */
+                if (entryTime[y] < entryTime[oldestVertex[x]])
+                    oldestVertex[x] = y;
+        }
+        return false;
+    }
+
+    void processVertexEarlyStrongComponent(int v) {
+        active.push(v);
+    }
+
+    void processVertexLateStrongComponent(int v) {
+        if (oldestVertex[v] == v) {     /* edge (parent[v],v) cuts off scc */
+            popComponent(v);
+        }
+        if (entryTime[oldestVertex[v]] < entryTime[oldestVertex[parent[v]]])
+            oldestVertex[parent[v]] = oldestVertex[v];
+    }
+
+    void popComponent(int v) {
+        int t;                /* vertex placeholder */
+        componentsFound++;
+        strongComponentNumber[v] = componentsFound;
+        while ((t = active.pop()) != v) {
+            strongComponentNumber[t] = componentsFound;
+        }
+    }
+
 }

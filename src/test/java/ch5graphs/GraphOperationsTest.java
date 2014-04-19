@@ -115,6 +115,17 @@ public class GraphOperationsTest {
         Assert.assertEquals(expected, result);
     }
 
+    @Test
+    public void sholdFindStrongConnectedComponent(){
+        //given
+        Graph graph = GraphTestHelper.createGraphWithThreeStronglyConnectedComponents();
+        GraphOperations graphOperations = new GraphOperations(new GraphSimpleProcessOperations());
+        //when
+        graphOperations.strongComponenets(graph);
+        //then
+        Assert.assertEquals(3, graphOperations.componentsFound);
+    }
+
 
 
 

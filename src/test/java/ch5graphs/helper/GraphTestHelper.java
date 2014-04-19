@@ -60,4 +60,21 @@ public class GraphTestHelper {
         return graph;
 
     }
+
+    public static Graph createGraphWithThreeStronglyConnectedComponents() {
+        Graph graph = new Graph(true);
+        graph.insertEdge(1,2, true);
+        graph.insertEdge(2,3, true);
+        graph.insertEdge(3,1, true);
+        graph.insertEdge(2,4, true);
+        graph.insertEdge(4,1, true);
+        graph.insertEdge(4,6, true);
+        graph.insertEdge(4,8, true);
+        graph.insertEdge(8,6, true);
+        graph.insertEdge(2,5, true);
+        graph.insertEdge(5,6, true);
+        graph.insertEdge(6,7, true);
+        graph.insertEdge(7,5, true);
+        return graph;
+    }
 }
