@@ -32,7 +32,11 @@ public class WeightedGraphOperations {
      *
      * @param start
      */
-    void prim(Graph graph, int start) {
+    public void prim(Graph graph, int start) {
+        prim(graph, start, this::primAlgCondition);
+    }
+
+    private void prim(Graph graph, int start, QuadConsumer<Boolean, Integer, Integer, Integer> quadConsumer) {
 
 
         boolean intree[] = new boolean[Graph.MAX_VERTICES];/* is the vertex in the tree yet? */
@@ -57,10 +61,7 @@ public class WeightedGraphOperations {
             while (edgeNode != null) {
                 nextVertexCandidate = edgeNode.adjencyInfo;
                 edgeWeight = edgeNode.weight;
-                if ((distance[nextVertexCandidate] > edgeWeight) && (!intree[nextVertexCandidate])) {
-                    distance[nextVertexCandidate] = edgeWeight;
-                    parent[nextVertexCandidate] = currentVertex;
-                }
+                quadConsumer.accept(intree[nextVertexCandidate], currentVertex, nextVertexCandidate, edgeWeight);
                 edgeNode = edgeNode.next;
             }
             currentVertex = 1;
@@ -75,6 +76,25 @@ public class WeightedGraphOperations {
             }
 
 
+        }
+    }
+
+    private void primAlgCondition(boolean intree, int currentVertex, int nextVertexCandidate, int edgeWeight) {
+        if ((distance[nextVertexCandidate] > edgeWeight) && (!intree)) {
+            distance[nextVertexCandidate] = edgeWeight;
+            parent[nextVertexCandidate] = currentVertex;
+        }
+    }
+
+    public int findShortestPathDijkstra(Graph g, int from, int to){
+        prim(g,from,this::dijkstraAlgCondition);
+        return distance[to];
+    }
+
+    private void dijkstraAlgCondition(boolean ignore, int currentVertex, int nextVertexCandidate,int edgeWeight){
+        if(distance[nextVertexCandidate] > (distance[currentVertex] + edgeWeight) ){
+            distance[nextVertexCandidate]  = distance[currentVertex] + edgeWeight;
+            parent[nextVertexCandidate] = currentVertex;
         }
     }
 

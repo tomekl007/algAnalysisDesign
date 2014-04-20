@@ -22,4 +22,14 @@ public class WeightedGraphOperationsTest {
         Assert.assertEquals(3, weightedGraphOperations.getMinimumSpanningTreeWeight());
 
     }
+    @Test
+    public void shouldFndShortestPathUsingDijkstraAlg(){
+        //given
+        Graph graph = GraphTestHelper.createWeightenedGraph();
+        WeightedGraphOperations weightedGraphOperations = new WeightedGraphOperations();
+        //when
+        int distance = weightedGraphOperations.findShortestPathDijkstra(graph, 1, 3);
+        //then
+        Assert.assertEquals(2, distance);
+    }
 }
