@@ -2,6 +2,7 @@ package ch6_weightedGraphs;
 
 import ch5graphs.Graph;
 import ch5graphs.helper.GraphTestHelper;
+import ch6_weightedGraphs.allpairs.shortestpath.AdjacencyMatrix;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -31,5 +32,17 @@ public class WeightedGraphOperationsTest {
         int distance = weightedGraphOperations.findShortestPathDijkstra(graph, 1, 3);
         //then
         Assert.assertEquals(2, distance);
+    }
+
+    @Test
+    public void shouldFindAllPairsUsingFloydAlg(){
+        //given
+        AdjacencyMatrix adjacencyMatrix = GraphTestHelper.createAdjacencyMatrix();
+        WeightedGraphOperations weightedGraphOperations = new WeightedGraphOperations();
+        //when
+        weightedGraphOperations.floyd(adjacencyMatrix);
+        //then
+        Assert.assertTrue(adjacencyMatrix.weights[3][1] != 10);
+
     }
 }

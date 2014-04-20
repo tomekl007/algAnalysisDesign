@@ -1,6 +1,7 @@
 package ch5graphs.helper;
 
 import ch5graphs.Graph;
+import ch6_weightedGraphs.allpairs.shortestpath.AdjacencyMatrix;
 
 /**
  * @author Tomasz Lelek
@@ -86,5 +87,25 @@ public class GraphTestHelper {
         graph.insertEdge(1,3, true, 10);
         graph.insertEdge(3,4, true, 2);
         return graph;
+    }
+
+    public static AdjacencyMatrix createAdjacencyMatrix() {
+        AdjacencyMatrix adjacencyMatrix = new AdjacencyMatrix();
+        adjacencyMatrix.weights[1][2] = 1;
+        adjacencyMatrix.weights[2][1] = 1;
+        adjacencyMatrix.weights[1][3] = 10;
+        adjacencyMatrix.weights[3][1] = 10;
+        adjacencyMatrix.weights[1][4] = 1;
+        adjacencyMatrix.weights[4][1] = 1;
+        adjacencyMatrix.weights[2][3] = 1;
+        adjacencyMatrix.weights[3][2] = 1;
+        adjacencyMatrix.weights[3][4] = 2;
+        adjacencyMatrix.weights[4][3] = 2;
+        adjacencyMatrix.weights[2][4] = Integer.MAX_VALUE;
+        adjacencyMatrix.weights[4][2] = Integer.MAX_VALUE;
+
+        adjacencyMatrix.numberOfVerticesInGraph = 4;
+        return adjacencyMatrix;
+
     }
 }

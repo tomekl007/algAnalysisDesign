@@ -4,6 +4,7 @@ import ch5graphs.EdgeNode;
 import ch5graphs.EdgePair;
 import ch5graphs.Graph;
 import ch5graphs.GraphOperations;
+import ch6_weightedGraphs.allpairs.shortestpath.AdjacencyMatrix;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -86,14 +87,14 @@ public class WeightedGraphOperations {
         }
     }
 
-    public int findShortestPathDijkstra(Graph g, int from, int to){
-        prim(g,from,this::dijkstraAlgCondition);
+    public int findShortestPathDijkstra(Graph g, int from, int to) {
+        prim(g, from, this::dijkstraAlgCondition);
         return distance[to];
     }
 
-    private void dijkstraAlgCondition(boolean ignore, int currentVertex, int nextVertexCandidate,int edgeWeight){
-        if(distance[nextVertexCandidate] > (distance[currentVertex] + edgeWeight) ){
-            distance[nextVertexCandidate]  = distance[currentVertex] + edgeWeight;
+    private void dijkstraAlgCondition(boolean ignore, int currentVertex, int nextVertexCandidate, int edgeWeight) {
+        if (distance[nextVertexCandidate] > (distance[currentVertex] + edgeWeight)) {
+            distance[nextVertexCandidate] = distance[currentVertex] + edgeWeight;
             parent[nextVertexCandidate] = currentVertex;
         }
     }
@@ -124,10 +125,28 @@ public class WeightedGraphOperations {
         invertWeights(graph);
         prim(graph, i);
     }
-    public void invertWeights(Graph graph){
-        for(EdgeNode edgeNode : graph.edges){
+
+    public void invertWeights(Graph graph) {
+        for (EdgeNode edgeNode : graph.edges) {
             edgeNode.weight = -edgeNode.weight;
         }
     }
+
+    /**
+     * Floyd-Warshall all-pairs shortest path algorithm
+     */
+    public void floyd(AdjacencyMatrix a) {
+
+
+        int distanceThroughVertexK;
+        for (int k = 1; k <= a.numberOfVerticesInGraph; k++)
+            for (int i = 1; i <= a.numberOfVerticesInGraph; i++)
+                for (int j = 1; j <= a.numberOfVerticesInGraph; j++) {
+                    distanceThroughVertexK = a.weights[i][k] + a.weights[k][j];
+                    if (distanceThroughVertexK < a.weights[i][j])
+                        a.weights[i][j] = distanceThroughVertexK;
+                }
+    }
+
 }
 
