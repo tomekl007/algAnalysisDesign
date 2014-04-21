@@ -5,10 +5,7 @@ import ch7_combinatorialHeuristics.sudoku.BoardType;
 import ch7_combinatorialHeuristics.sudoku.SudokuBacktrackingFunctions;
 import ch7_combinatorialHeuristics.sudoku.SudokuConst;
 
-import java.util.LinkedHashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @author Tomasz Lelek
@@ -54,7 +51,8 @@ public class Backtracking {
     }
 
     private<T> void unmakeMove(int[] a, int k, T input) {
-
+        System.out.println("unmake move for : a: " + Arrays.toString(a) + " k : " + k + " input : " + input);
+        System.out.println();
     }
 
     private<T> void makeMove(int[] a, int k, T input) {
